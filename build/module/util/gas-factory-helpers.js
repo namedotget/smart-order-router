@@ -10,7 +10,7 @@ import { CurrencyAmount, log, WRAPPED_NATIVE_CURRENCY } from '../util';
 import { opStackChains } from './l2FeeChains';
 import { buildSwapMethodParameters, buildTrade } from './methodParameters';
 import { estimateL1Gas, estimateL1GasCost } from '@eth-optimism/sdk';
-import {BigNumber} from 'ethers'
+
 export async function getV2NativePool(token, poolProvider, providerConfig) {
     const chainId = token.chainId;
     const weth = WRAPPED_NATIVE_CURRENCY[chainId];
